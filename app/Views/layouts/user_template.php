@@ -57,7 +57,8 @@
                         <li class="sidebar-item">
                             <a class="sidebar-link" href="<?= base_url('personality-test') ?>" aria-expanded="false">
                                 <span>
-                                    <iconify-icon icon="material-symbols:psychology-outline" width="20" height="20"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:psychology-outline" width="20"
+                                        height="20"></iconify-icon>
                                 </span>
                                 <span class="hide-menu">Personality Test</span>
                             </a>
@@ -65,7 +66,8 @@
                         <li class="sidebar-item">
                             <a class="sidebar-link" href="<?= base_url('aptitude-test') ?>" aria-expanded="false">
                                 <span>
-                                    <iconify-icon icon="fluent:brain-circuit-20-filled" width="20" height="20"></iconify-icon>
+                                    <iconify-icon icon="fluent:brain-circuit-20-filled" width="20"
+                                        height="20"></iconify-icon>
                                 </span>
                                 <span class="hide-menu">Aptitude Test</span>
                             </a>
@@ -76,6 +78,15 @@
                                     <iconify-icon icon="carbon:report" width="20" height="20"></iconify-icon>
                                 </span>
                                 <span class="hide-menu">Report</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link" href="<?= base_url('feedback') ?>" aria-expanded="false">
+                                <span>
+                                    <iconify-icon icon="fluent:person-feedback-16-filled" width="20"
+                                        height="20"></iconify-icon>
+                                </span>
+                                <span class="hide-menu">Feedback</span>
                             </a>
                         </li>
                         <li class="nav-small-cap">
@@ -127,26 +138,21 @@
                     <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
                         <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
                             <h5>
-                                Username
+                                <?= $profile['username'] ?>
                             </h5>
                             <li class="nav-item dropdown">
                                 <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2"
                                     data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img src="<?= base_url("../user/images/profile/user-1.jpg") ?>" alt="" width="35"
+                                    <img src="<?= $profile['photo'] ?? base_url("../user/images/profile/user-1.jpg") ?>" alt="" width="35"
                                         height="35" class="rounded-circle">
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up"
                                     aria-labelledby="drop2">
                                     <div class="message-body">
-                                        <a href="<?= base_url('adm/' . 1 . '/profil') ?>"
+                                        <a href="<?= base_url($profile['id'] . '/profile') ?>"
                                             class="d-flex align-items-center gap-2 dropdown-item">
                                             <i class="ti ti-user fs-6"></i>
-                                            <p class="mb-0 fs-3">Profil</p>
-                                        </a>
-                                        <a href="<?= base_url('adm/akun') ?>"
-                                            class="d-flex align-items-center gap-2 dropdown-item">
-                                            <i class="ti ti-mail fs-6"></i>
-                                            <p class="mb-0 fs-3">Akun</p>
+                                            <p class="mb-0 fs-3">Profile</p>
                                         </a>
                                         <a href="<?= base_url('logout') ?>"
                                             class="btn btn-outline-primary mx-3 mt-2 d-block">Logout</a>

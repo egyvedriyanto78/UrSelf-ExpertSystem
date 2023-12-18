@@ -70,6 +70,15 @@
                                 <span class="hide-menu">Report</span>
                             </a>
                         </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link" href="<?= base_url('urself/feedback') ?>" aria-expanded="false">
+                                <span>
+                                    <iconify-icon icon="fluent:person-feedback-16-filled" width="20"
+                                        height="20"></iconify-icon>
+                                </span>
+                                <span class="hide-menu">Feedback</span>
+                            </a>
+                        </li>
                         <li class="nav-small-cap">
                             <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
                             <span class="hide-menu">Information</span>
@@ -133,12 +142,7 @@
                                         <a href="<?= base_url('adm/' . 1 . '/profil') ?>"
                                             class="d-flex align-items-center gap-2 dropdown-item">
                                             <i class="ti ti-user fs-6"></i>
-                                            <p class="mb-0 fs-3">Profil</p>
-                                        </a>
-                                        <a href="<?= base_url('adm/akun') ?>"
-                                            class="d-flex align-items-center gap-2 dropdown-item">
-                                            <i class="ti ti-mail fs-6"></i>
-                                            <p class="mb-0 fs-3">Akun</p>
+                                            <p class="mb-0 fs-3">Profile</p>
                                         </a>
                                         <a href="<?= base_url('logout') ?>"
                                             class="btn btn-outline-primary mx-3 mt-2 d-block">Logout</a>

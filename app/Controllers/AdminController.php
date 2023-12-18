@@ -30,6 +30,14 @@ class AdminController extends BaseController
         return view('admin_report', $data);
     }
 
+    public function feedback()
+    {
+        $data = [
+            'title' => 'Admin | User Feedback',
+        ];
+        return view('admin_feedback', $data);
+    }
+
     public function us()
     {
         $data = [
