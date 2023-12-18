@@ -8,7 +8,7 @@
             <img src="<?= base_url("../admin/images/logos/favicon.png") ?>" width="40" height="40">
         </div>
         <h1><span style=" color:blue">Ur</span>Self</h1>
-        <h5>|| Find YourSelf ||</h5>
+        <h5>|| Know YourSelf ||</h5>
         <main>
             <h3>About Us</h3>
             <p>
