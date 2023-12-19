@@ -3,7 +3,7 @@
 <?= $this->section('content') ?>
 
 <div class="container-fluid">
-
+    COMING SOON !!!
 </div>
 
 <?= $this->endSection() ?>
