@@ -188,6 +188,7 @@
     <script src="<?= base_url("user/js/dashboard.js") ?>"></script>
     <script src="<?= base_url("user/js/gallery.js") ?>"></script>
     <script src="<?= base_url("user/js/preview.js") ?>"></script>
+    <script src="<?= base_url("user/js/test.js") ?>"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>

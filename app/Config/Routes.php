@@ -31,3 +31,8 @@ $routes->get('(:any)/profile', [UserController::class, 'profile']);
 $routes->put('/profile/(:any)', [UserController::class, 'update_profile']);
 $routes->get('/profile/(:any)', [UserController::class, 'deletePhoto']);
 
+//personality-test
+$routes->post('/psy', [UserController::class, 'psy']);
+$routes->delete('/psy/(:any)', [UserController::class, 'deletePsy']);
+
+
