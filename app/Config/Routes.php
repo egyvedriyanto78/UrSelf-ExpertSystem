@@ -3,6 +3,7 @@
 use CodeIgniter\Router\RouteCollection;
 use App\Controllers\AdminController;
 use App\Controllers\UserController;
+use App\Controllers\Api;
 
 /**
  * @var RouteCollection $routes
@@ -34,5 +35,10 @@ $routes->get('/profile/(:any)', [UserController::class, 'deletePhoto']);
 //personality-test
 $routes->post('/psy', [UserController::class, 'psy']);
 $routes->delete('/psy/(:any)', [UserController::class, 'deletePsy']);
+
+//rest api
+// $routes->resource("api");
+$routes->post('api', [Api::class, 'create']);
+$routes->get('api/(:any)', [Api::class, 'show']);
 
 
